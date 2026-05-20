@@ -1,0 +1,195 @@
+<!-- 
+================================================================================
+                    PLANTILLA HTML COMENTADA - FRONTEND BÁSICO
+================================================================================
+Esta plantilla explica línea por línea la estructura HTML correcta para 
+comenzar con proyectos frontend. Sirve como referencia educativa.
+================================================================================
+-->
+
+<!-- 
+DOCTYPE: Le indica al navegador que este es un documento HTML5.
+Es la primera línea obligatoria en cualquier archivo HTML moderno.
+-->
+<!DOCTYPE html>
+
+<!-- 
+ETIQUETA HTML: Es el contenedor raíz de todo el documento.
+- lang="es" especifica que el contenido está en español, ayuda a accesibilidad
+  y a los motores de búsqueda.
+-->
+<html lang="es">
+
+<!-- 
+HEAD: Esta sección NO se ve en el navegador, pero contiene información importante
+sobre la página (metadatos). Todo lo que va aquí son instrucciones para el navegador.
+-->
+<head>
+    <!-- 
+    CHARSET: Define la codificación de caracteres (UTF-8 es el estándar universal).
+    Sin esto, símbolos especiales y acentos podrían mostrarse incorrectamente.
+    SIEMPRE va al principio del <head>
+    -->
+    <meta charset="UTF-8">
+    
+    <!-- 
+    VIEWPORT: Hace que la página sea responsive (se adapte a dispositivos móviles).
+    - width=device-width: la página ocupa el ancho del dispositivo
+    - initial-scale=1.0: nivel de zoom inicial es 1x
+    SIN ESTO, la página se verá mal en celulares.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 
+    TITLE: Es el texto que aparece en la pestaña del navegador.
+    También es importante para SEO (posicionamiento en Google).
+    -->
+    <title>Mi Página Frontend</title>
+    
+    <!-- 
+    Aquí irían tus enlaces a archivos CSS (hojas de estilos)
+    Ejemplo: <link rel="stylesheet" href="estilos.css">
+    -->
+</head>
+
+<!-- 
+BODY: Esta es la sección VISIBLE. Todo lo que ves en el navegador está aquí.
+-->
+<body>
+    <!-- 
+    HEADER: Encabezado de la página. Generalmente contiene:
+    - Logo de la empresa
+    - Título principal de la página
+    - Menú de navegación
+    
+    Es semántico porque indica claramente "esta es la cabecera".
+    -->
+    <header>
+        <!-- 
+        H1: Encabezado de nivel 1 (el más importante).
+        Solo debe haber UNO por página.
+        Importante para SEO.
+        -->
+        <h1>Bienvenido a Mi Página</h1>
+        
+        <!-- 
+        NAV: Elemento semántico para navegación.
+        Indica claramente que este es el menú de la página.
+        -->
+        <nav>
+            <!-- 
+            UL: Unordered List (lista sin orden, con viñetas).
+            LI: List Item (elemento de la lista).
+            -->
+            <ul>
+                <!-- 
+                A: Hipervínculo (link).
+                href="#inicio" apunta a la sección con id="inicio"
+                (anclas internas de la página)
+                -->
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 
+    MAIN: Contenedor semántico para el contenido PRINCIPAL de la página.
+    Solo debe haber UNO por página.
+    Todo lo importante va aquí.
+    -->
+    <main>
+        <!-- 
+        SECTION: Agrupa contenido relacionado temáticamente.
+        id="inicio" es un identificador único para este elemento.
+        Se puede acceder a él con href="#inicio"
+        -->
+        <section id="inicio">
+            <!-- 
+            H2: Encabezado de nivel 2 (subsección).
+            Va dentro de section.
+            -->
+            <h2>Sección de Inicio</h2>
+            
+            <!-- 
+            P: Párrafo de texto.
+            Es el elemento básico para contenido de texto.
+            -->
+            <p>Este es el contenido principal de tu página.</p>
+        </section>
+
+        <!-- Segunda sección: "Acerca de" -->
+        <section id="acerca">
+            <h2>Acerca de</h2>
+            <p>Información sobre ti o tu proyecto.</p>
+        </section>
+
+        <!-- Tercera sección: "Contacto" -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Email: ejemplo@correo.com</p>
+        </section>
+    </main>
+
+    <!-- 
+    FOOTER: Pie de página. Generalmente contiene:
+    - Derechos de autor (copyright)
+    - Enlaces a redes sociales
+    - Información de contacto
+    - Mapa del sitio
+    
+    Es semántico y aparece al final de la página.
+    -->
+    <footer>
+        <!-- 
+        &copy; es la entidad HTML para el símbolo © (copyright)
+        Las entidades HTML empiezan con & y terminan con ;
+        -->
+        <p>&copy; 2026 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+    
+    <!-- 
+    Aquí irían tus scripts de JavaScript (interactividad)
+    Se ponen al final del body para que cargue el HTML primero.
+    Ejemplo: <script src="script.js"></script>
+    -->
+</body>
+</html>
+
+<!-- 
+================================================================================
+                           RESUMEN DE LO IMPORTANTE
+================================================================================
+
+1. ESTRUCTURA BÁSICA:
+   - <!DOCTYPE html> obligatorio
+   - <html> raíz
+   - <head> información invisible
+   - <body> contenido visible
+
+2. ETIQUETAS SEMÁNTICAS (dan significado):
+   - <header> encabezado
+   - <nav> navegación
+   - <main> contenido principal
+   - <section> agrupación temática
+   - <footer> pie de página
+   - <article> artículo independiente
+
+3. JERARQUÍA DE ENCABEZADOS:
+   - H1: Título principal (solo 1 por página)
+   - H2, H3, H4...: Subtítulos (en orden jerárquico)
+
+4. METADATOS ESENCIALES EN <head>:
+   - charset="UTF-8" para caracteres correctos
+   - viewport para responsive design
+   - <title> para nombre de la página
+
+5. BUENAS PRÁCTICAS:
+   - Usar HTML semántico (header, nav, main, section, footer)
+   - Indentación consistente (espacios/tabs)
+   - IDs únicos para elementos específicos
+   - Estructura clara y lógica
+
+================================================================================
+-->
